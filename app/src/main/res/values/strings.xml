@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">StateCityQuiz</string>
+    <string name="action_settings">Settings</string>
+    <string name= "Play">Play  </string>
+    <string name= "Scores">Scores</string>
+    <string name= "Title">The States Quiz Game</string>
+    <string name = "Exit">Exit</string>
+    <string name= "Query">Capital or State?</string>
+    <string name= "Placeholder">Holdplace</string>
+    <string name= "Start">Start</string>
+    <string name="NAME">"What is your name?</string>
+    <string name="State">State</string>
+    <string name="Capital">Capital</string>
+    <string name= "Confirm">Confirm Answer</string>
+    <string name= "Enter">Enter your Answer</string>
+    <string name="Correct"> Correct !</string>
+    <string name="Wrong"> Wrong ! </string>
+    <string name= "Proper">Error enter a proper name please</string>
+
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                tools:context="com.example.mda.statecityquiz.Game">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint = "@string/NAME"
+        android:id = "@+id/name"
+        android:inputType="text"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "@string/Query"
+        android:textSize="20dp"
+        android:textColor="@color/White"
+        android:id="@+id/Prompt1"
+        android:layout_below="@+id/StartButton"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "Round"
+        android:textSize="20dp"
+        android:textColor="@color/White"
+        android:id="@+id/Round"
+        android:layout_below="@+id/StartButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "@string/Placeholder"
+        android:textSize="20dp"
+        android:textColor="@color/White"
+        android:id="@+id/Prompt2"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@+id/capitalbutton"
+        android:layout_marginTop="80dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "@string/Correct"
+        android:textSize="20dp"
+        android:textColor="@color/White"
+        android:id="@+id/answer1"
+        android:layout_marginLeft="60dp"
+        android:layout_below="@+id/capitalbutton"
+        android:layout_marginTop="20dp"
+        android:visibility = "invisible"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/Correct"
+        android:textColor="@color/White"
+        android:id="@+id/answer2"
+        android:layout_below="@+id/ConfirmButton"
+        android:layout_alignStart="@+id/Prompt2"
+        android:layout_marginTop="20dp"
+        android:visibility = "invisible"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint = "@string/Enter"
+        android:id = "@+id/capitalanswer"
+        android:inputType="text"
+        android:layout_marginTop="58dp"
+        android:layout_below="@+id/Prompt2"
+        android:layout_alignEnd="@+id/capitalbutton"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Start"
+        android:id="@+id/StartButton"
+        android:layout_alignTop="@+id/name"
+        android:layout_toEndOf="@+id/name"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Confirm"
+        android:id="@+id/ConfirmButton"
+        android:layout_alignTop="@+id/capitalanswer"
+        android:layout_alignStart="@+id/statebutton"
+        android:visibility = "invisible"
+        />
+
+    <Button
+        android:layout_width="@dimen/capstate_width"
+        android:layout_height="@dimen/capstate_height"
+        android:text="@string/Capital"
+        android:id="@+id/capitalbutton"
+        android:layout_gravity="center"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/Prompt1"
+        android:visibility="invisible"
+        android:layout_marginLeft="50dp"/>
+
+    <Button
+        android:layout_width="@dimen/capstate_width"
+        android:layout_height="@dimen/capstate_height"
+        android:text="@string/State"
+        android:id="@+id/statebutton"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:layout_above="@+id/Prompt2"
+        android:layout_alignEnd="@+id/StartButton"/>
+
+</RelativeLayout>
